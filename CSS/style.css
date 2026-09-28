@@ -1,0 +1,33 @@
+body{
+    background-color: #ebebb7;
+    color: #050565;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+header{
+    background-color: #f2f4a6;
+    color: #ebebb7;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: #6952d9;
+}
+
+nav a:hover{
+    color: goldenrod;
+}

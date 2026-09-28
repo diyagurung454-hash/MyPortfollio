@@ -1,18 +1,163 @@
-<html>
-    <head>
-        <title> Hello MIT</title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 <body>
-    <h1> About Me </h1>
-<p>
-    <b> My name is Diya Gurung.</b> I am a student at MIT. I am originally from Tal, Manang, a beautiful place known for its natural scenery and tourism, and I currently live in Kathmandu. Growing up in Manang taught me to appreciate nature, culture, and the importance of family. <br>
+<header>
+    <div class="header-container">                 
+
+        <div class="logo">
+            <img src="images/logo.png" alt="logo" width="80">
+        </div>
+
+        <div class="nav-bar">
+            <nav>
+                <ul>
+                    <li><a href="#about">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="search-bar">
+            <form>
+                <input type="search" placeholder="Search">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+    </div>
+</header>
+
+<main>
+
+
+    <section id="about"> <h1>About Me</h1> 
+        <img src="images/diya.jpeg" alt="Diya Gurung" width="200" height="200"> 
+        <p> <b>My name is Diya Gurung.</b> I am a student at MIT. I am originally from Tal, Manang, a beautiful place known for its natural scenery and tourism, and I currently live in Kathmandu. Growing up in Manang taught me to appreciate nature, culture, and the importance of family. 
+        </p> 
+    </section>
+
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <dl>
+            <dt>Programming Language</dt>
+            <dd>Java, python, c, C++ </dd>
+
+            <dt>Database</dt>
+            <dd>MySQL, MongoDB, Oracle, PostgreSQL</dd>
+
+            <dt>Tools</dt>
+            <dd>VSCode, Ms Word, Excel, PowerPoint </dd>
+
+            <dt>Framework</dt>
+            <dd> Spring Boot, Angular, Django,Dot Net</dd>
+        </dl>
+    </section>
+
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <article>
+            <h3>Project 1: Rock Paper Scissors Game</h3>
+            <p>I developed a simple Rock Paper Scissors game in C as a console-based project. The game allows the player to choose Rock, Paper, or Scissors and compares the choice with the computer’s randomly generated choice. It includes options to play the game, view scores, and exit. I also used a score.txt file to save and display the scores. This project helped me improve my understanding of C programming, loops, conditions, functions, and file handling.</p>
+        </article>
+
+        <article>
+            <h3>Project 2: Student Management Database</h3>
+            <p>I developed a simple student management system using MySQL for database operations. The system allows for adding, updating, and deleting student records, as well as viewing all student information. This project helped me understand database design, SQL queries, and the integration of a database with a programming language.</p>
+        </article>
+
+        <article>
+            <h3>Project 3: Basketball Live-Streaming App UI/UX</h3>
+            <p>I designed a Basketball Live-Streaming App UI/UX focused on providing basketball fans with an easy and engaging way to watch live games. The design includes features such as live scores, game schedules, team information, and video streaming. I created the interface in Figma, focusing on simple navigation, clear layouts, and a user-friendly experience. This project helped me improve my skills in UI/UX design, wireframing, prototyping, and user-centered design.</p>
+        </article>
+
+        <article>
+            <h3>Project 4: Networking Projects</h3>
+            <p>Networking projects using Cisco Packet Tracer and Wireshark, focusing on network configuration and analysis.</p>
+        </article>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th> S.N.</th>
+                    <th> Level </th>
+                    <th> Completion Date </th>
+                <th> School/College </th>
+                <th> Grade </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> 1 </td>
+                <td> Secondary </td>
+                <td> 2018 </td>
+                <td> Wendy House  </td>
+                <td> A </td>
+            </tr>
+            <tr>
+                <td> 2 </td>
+                <td> Higher Secondary </td>
+                <td> 2020 </td>
+                <td> Hrit Academy </td>
+                <td> B+ </td>
+            </tr>
+            <tr>
+                <td> 3 </td>
+                <td> Bachelor </td>
+                <td> 2025- onging </td>
+                <td> Model Institute of Technology </td>
+                <td> ongoing </td>
+            </tr>
+        </tbody>
+        </table>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+            <form>
+                <br><label>Username</label>
+                <input type="text" placeholder="Type your name here ">
+                <br>
+                <br><label>Email</label>
+       <input type="email" placeholder="Type your email here">
+       <br>
+       <br><label>Message</label>
+       <textarea placeholder="Type your message here"></textarea>
+       <br>
+       <br><button type="submit">Submit</button>
+    </form> 
+    </section>
+    </main>
+
+    <footer>
+
+<h2>Follow me on</h2>
+<p> 
+    <a href="https://www.instagram.com/?hl=en"> <img src="images/insta.png" alt="instagram" width="100" height="80"></a>
+    
+    <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook" width="100" height="80"></a>
+
+    <a href="https://np.linkedin.com/"><img src="images/linkedin.png" alt="linkedin" width="80" height="80"></a>
+
+    <a href="https://www.whatsapp.com/"><img src="images/whatsapp.png" alt="whatsapp" width="80" height="80"></a>
+    
 </p>
-    <h2> My Skills </h2>
-    <p>
-        <b> I am a responsible and hardworking person with good teamwork, communication, and time-management skills. I have basic IT knowledge in programming, databases, and networking. I am also adaptable, creative, and willing to learn new things. My experience in basketball, volunteering, and group activities has helped me become more confident, disciplined, and comfortable working with others. </b>
-    </p>
-    <h3> </h3>
-    <h3> </h3>
-    <h4> </h4>
+    <p> &copy; 2024 Diya Gurung. All rights reserved.</p>
+
+
+ </footer>
 </body>
 </html>
