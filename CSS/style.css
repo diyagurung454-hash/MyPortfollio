@@ -1,249 +1,278 @@
-body{
-
-    background-color: #f7f7ce;
-
+body {
+    background-color: #f6f6cc;
     color: #050565;
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    font-family: 'Segoe UI', Times New Roman, sans-serif;
     line-height: 1.6;
-
 }
 
-header{
-
-    background-color: #eff0b7;
-
-    color: #ebebb7;
-
+img {
+    max-width: 100%;
 }
 
-.header-container{
+header {
+    background-color: #e7e8b2;
+    color: #e1e1af;
+}
 
-    display: flex;
-
-    justify-content: space-between;
-
+.header-container {
+    display: flex ;
+    justify-content: space-between ;
     align-items: center;
-
-    padding: 10px 20px;
-
+    padding: 20px;
 }
 
-nav ul{
-
-    display: flex;
-
-    gap: 20px;
-
-    list-style: none;
-
+nav ul {
+    display: flex ;
+    gap: 20px ;
+    list-style: none ;
 }
 
-nav a{
-
+nav a {
     text-decoration: none;
-
-    color: #6952d9;
-
+    color: #6952da;
+    transition: color 0.3s ease;
 }
 
-nav a:hover{
-
-    color: goldenrod;
-
+nav a:hover {
+    color: rgb(218, 165, 32);
 }
 
-.search-bar{
-
+.search-bar {
     display: flex;
-
     align-items: center;
-
 }
 
-.about-container{
 
+#about {
+    background-color: rgb(234, 239, 192);
+    color: rgb(8, 8, 8);
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px rgb(13, 13, 13);
+}
+
+.about-container {
     display: flex;
-
+    flex-direction: row;
     align-items: center;
-
-    justify-content: space-between;
-
-    gap: 30px;
-
-    padding: 30px;
-
+    justify-content: flex-start;
+    gap: 40px;
+    padding: 40px;
 }
 
-.about-container img{
-
-    border-radius: 15px;
-
-    box-shadow: 6px 6px 12px black;
-
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
 }
 
-.about-text{
-
+.about-text {
     flex: 1;
-
+    text-align: left;
 }
 
-#about{
-
-    background-color: rgb(234, 239, 192);
-
-    color: black;
-
-    margin: 30px;
-
-    border-radius: 10px;
-
-    box-shadow: 6px 6px 12px black;
-
+.about-container img {
+    transition: transform 0.3s ease;
 }
 
-#skills{
-
-    background-color: rgb(234, 239, 192);;
-
-    color: black;
-
-    padding: 30px;
-
-    margin: 30px;
-
-    border-radius: 10px;
-
-    box-shadow: 6px 6px 12px black;
-
-}
-
-#projects{
-
-    background-color: rgb(234, 239, 192);
-
-    color: black;
-
-    padding: 30px;
-
-    margin: 30px;
-
-    border-radius: 10px;
-
-    box-shadow: 6px 6px 12px black;
-
-}
-
-#education{
-
-    background-color: rgb(234, 239, 192);
-
-    color: black;
-
-    padding: 30px;
-
-    margin: 30px;
-
-    border-radius: 10px;
-
-    box-shadow: 6px 6px 12px black;
-
-}
-
-#contact{
-
-    background-color: rgb(234, 239, 192);
-
-    color: black;
-
-    padding: 30px;
-
-    margin: 30px;
-
-    border-radius: 10px;
-
-    box-shadow: 6px 6px 12px black;
-
-}
-
-article{
-
-    padding: 10px;
-
-}
-
-table{
-
-    width: 100%;
-
-    border-collapse: collapse;
-
-}
-
-th, td{
-
-    padding: 10px;
-
-}
-
-input{
-
-    padding: 8px;
-
-}
-
-textarea{
-
-    padding: 8px;
-
-}
-
-button{
-
-    padding: 8px;
-
-}
-
-footer{
-
-    background-color: #f2f4a6;
-
-    color: #050565;
-
-    padding: 30px;
-
-    margin-top: 30px;
-
-    text-align: center;
-
-}
-
-.projects-container articale:hover{
-
+.about-container img:hover {
     transform: translateY(-5px);
-
 }
 
-@media (max-width: 758px){
-    .header-container{
+
+@media (max-width: 758px) {
+    #about {
+        margin: 15px;
+    }
+
+    .about-container {
         flex-direction: column;
+        padding: 20px;
     }
 }
-nav ul{
-    flex-direction: column;
+
+#skills {
+    background-color: rgb(234, 239, 192);
+    color: rgb(8, 8, 8);
+    padding: 30px ;
+    margin: 30px ;
+    border-radius: 10px ;
+    box-shadow: 6px 6px 12px rgb(13, 13, 13);
 }
 
-.about-container{
-    flex-direction: column;
+#skills h2 {
+    color: #060673;
+    border-bottom: 2px solid #6952da;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
-@media (max-width: 769px) and (min-width: 758px){
-.header-container{
-    flex-direction: column;
+#skills dt {
+    font-weight: bold;
+    color: #6952da;
+    margin-top: 15px;
+    transition: color 0.3s ease;
 }
-.about-container{
-    flex-direction: column;
+
+#skills dt:hover {
+    color: rgb(218, 165, 32);
 }
+
+#skills dd {
+    margin-left: 20px;
+    padding: 5px 10px;
+    border-left: 3px solid #6952da;
+    border-radius: 0 6px 6px 0;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
 }
+
+#skills dd:hover {
+    background-color: #e7e8b2;
+    border-left-color: rgb(218, 165, 32);
+    transform: translateX(5px);
+}
+
+#Projects {
+    background-color: rgb(234, 239, 192);
+    color: rgb(8, 8, 8);
+    padding: 30px ;
+    margin: 30px ;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px rgb(13, 13, 13);
+}
+
+article {
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.projects-container article:hover {
+    transform: translateY(-5px);
+}
+
+.project-section {
+    background-color: #e7e8b2;
+    color: #060673;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px rgb(13, 13, 13);
+}
+
+#Education {
+    background-color: rgb(234, 239, 192);
+    color: rgb(8, 8, 8);
+    padding: 30px ;
+    margin: 30px ;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px rgb(13, 13, 13);
+}
+
+#Education h2 {
+    color: #060673;
+    border-bottom: 2px solid #6952da;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse ;
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+}
+
+thead th {
+    background-color: #e7e8b2;
+    color: #060673;
+    border-bottom: 2px solid #6952da;
+}
+
+tbody td {
+    border-bottom: 1px solid #6952da;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f6f6cc;
+}
+
+tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+    background-color: #e7e8b2;
+}
+
+    table {
+        table-layout: auto;
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 6px 4px;
+    }
+
+    th {
+        font-size: 12px;
+    }
+
+    th:first-child,
+    td:first-child {
+        width: 30px;
+    }
+
+
+#contact {
+    background-color: rgb(234, 239, 192);
+    color: rgb(8, 8, 8);
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px rgb(13, 13, 13);
+}
+
+input {
+    padding: 8px ;
+}
+
+textarea {
+    padding: 8px;
+    width: 300px;
+    max-width: 100%;
+    height: 120px;
+    resize: none;
+}
+
+button {
+    padding: 8px ;
+}
+
+footer {
+    background-color: #f2f4a6;
+    color: #060673 ;
+    padding: 30px ;
+    margin-top: 30px ;
+    text-align: center ;
+}
+
+@media (max-width: 758px) {
+    .header-container {
+        flex-direction: column;
+    }
+nav ul {
+        flex-direction: column;
+    }
+.about-container {
+        flex-direction: column;
+    }
+} 
