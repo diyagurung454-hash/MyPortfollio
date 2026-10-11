@@ -272,4 +272,133 @@ footer {
 .about-container {
         flex-direction: column;
     }
-} 
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+#gallery {
+    background-color: rgb(234, 239, 192);
+    color: rgb(8, 8, 8);
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px rgb(13, 13, 13);
+}
+
+#gallery h2 {
+    color: #060673;
+    border-bottom: 2px solid #ccef21;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.slider {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.slider-viewport {
+    position: relative;
+    overflow: hidden;            
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+}
+
+.slider-track {
+    display: flex;                
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+    will-change: transform;       
+}
+
+.slider-track.no-transition {
+    transition: none;
+}
+
+.slide {
+    flex: 0 0 100%;
+    min-width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(183, 223, 38, 0.75);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+}
+
+.slider-btn:hover {
+    background-color: rgb(4, 102, 25);
+}
+
+.slider-btn.prev { left: 12px; }
+.slider-btn.next { right: 12px; }
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #c9cb8f;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.dot.active {
+    background-color: #c8e837;
+    transform: scale(1.4);
+}
+
+@media (max-width: 758px) {
+    #gallery { padding: 15px; }
+    .slider-btn { width: 36px; height: 36px; font-size: 16px; }
+}
+
+.slider-viewport {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    background-color: #e7e8b2;   
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;       
+}

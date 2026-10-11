@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>My Portfolio</title>
 
 </head>
@@ -26,6 +26,7 @@
                         <li><a href="#">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#gallery">Gallery</a></li>   <!-- NEW: added link -->
                         <li><a href="#Education">Education</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -149,6 +150,24 @@
             </div>
         </section>
 
+
+        <section id="gallery">
+            <h2>Project Gallery</h2>
+            <div class="slider" id="project-slider">
+                <div class="slider-viewport">
+                    <div class="slider-track">
+                        <div class="slide"><img src="images/game.svg" alt="Rock Paper Scissors game"></div>
+                        <div class="slide"><img src="images/student.jpeg" alt="Student management database"></div>
+                        <div class="slide"><img src="images/basketball.jpg" alt="Basketball live-streaming app design"></div>
+                        <div class="slide"><img src="images/network.jpeg" alt="Networking project"></div>
+                    </div>
+                    <button class="slider-btn prev" type="button" aria-label="Previous slide">&#10094;</button>
+                    <button class="slider-btn next" type="button" aria-label="Next slide">&#10095;</button>
+                </div>
+                <div class="slider-dots"></div>
+            </div>
+        </section>
+
         <section id="Education">
             <h2>Education</h2>
             <table border="1">
@@ -242,6 +261,9 @@
 
         <p>&copy; 2024 Diya Gurung. All rights reserved.</p>
     </footer>
+
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
